@@ -47,7 +47,7 @@ canvas {
 	position:absolute;
 	left:50%;
 	top:50%;
-	margin: -400px 0 0 -300px;
+	margin: -400px 0 0 -650px;
 	height: 800px;
 	width: 600px;
 }
@@ -55,10 +55,25 @@ canvas {
 .bg-background
 {
 	position:absolute;
-	left:50%;
-	top:50%;
-	margin: -400px 0 0 -300px;
+	left: 50%;
+	top: 50%;
+	margin: -400px 0 0 -650px;
 	background: rgb(35,36,38);
+	height: 800px;
+	width: 600px;
+	z-index: -2;
+	opacity: 0.5;
+}
+
+.bg-background-animation
+{
+	position:absolute;
+	background-repeat: no-repeat;
+    background-position: center; 
+	left: 50%;
+	top: 50%;
+	background: rgb(35,36,38);
+	margin: -400px 0 0 50px;
 	height: 800px;
 	width: 600px;
 	z-index: -2;
@@ -69,15 +84,13 @@ canvas {
 {
 	position:absolute;
 	background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center; 
-	left:50%;
-	top:50%;
-	margin: -400px 0 0 -300px;
+	left: 50%;
+	top: 50%;
+	margin: -400px 0 0 50px;
 	height: 800px;
 	width: 600px;
-	z-index: -1;
-	opacity: 1;
+	z-index: 4;
 }
 
 .grid:after {
@@ -95,12 +108,12 @@ canvas {
   padding:10px;
   color:rgb(236,236,236);
   font-size:130%;
-  border:2px solid black;
+  border:0px solid black;
 }
 
 .textarea:focus {
     outline: none !important;
-    border: 2px solid black;
+    border: 0px solid black;
 }
 
 .animation
