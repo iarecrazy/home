@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Rob's Sinterklaas gedicht</title>
+		<link rel="stylesheet" type="text/css" href="app.css">
+	</head>
+<body>
+
+<div class="bg-background">
+</div>
+<div class="bg-animation">
+</div>
+<div class="gedicht">
+	<textarea spellcheck="false" class="textarea"></textarea>
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.typetype.js"></script>
+<script type="text/javascript">
+
+
+	$(function(){
+
+		var showImage = function(image, delayIn, delayOut)
+		{
+			$(".bg-animation").css("background-image", "url('" + image + "')");
+			$(".bg-animation").fadeIn(delayIn, function()
+				{
+					$(".bg-animation").fadeOut(delayOut);
+				});
+		};
+		
+		$(".bg-animation").hide();
+
+		$('.textarea').focus()
+		.typetype("Rob Broeren").delay(3000)
+		.typetype(".", { callback: function() { showImage("bigsmile.png", 2500, 1500) } })
+		.delay(3500)
+		.typetype("\n\nWat kun jij toch", { callback: function() { showImage("blabla.png", 1500, 1500) } })
+		.typetype(" ouwehoeren")
+			  	.delay(2500)
+			  	.backspace(10)
+			  	.typetype("de oren van je kop lu", { callback: function() { showImage("vangogh.jpg", 3000, 3000) } })
+		.typetype("llen.")
+		.delay(6000)
+			  	.backspace(39)
+			  	.typetype("ben je toch gezellig.\n")
+		.typetype("Je kunt alleen nonie").delay(400)
+		.backspace(5)
+		.typetype("nongie").delay(400)
+		.backspace(6)
+		.typetype("nog niet zo gat").delay(400).backspace(3)
+		.typetype("god").delay(400).backspace(3)
+		.typetype("goed lezen.").delay(400)
+		.typetype("\nDat heb je zojuist bewezen.\n\n")
+		.typetype("Laten we het eens hebben over jouw kado voor mij.\n").delay(400).backspace(11)
+		.typetype(".\n")
+		.typetype("Ik heb er heel lang over nagedacht.\n")
+		.typetype("Het komt waarschijnlijk onverwacht.\n")
+		.typetype("Natuurlijk krijg jij het boek van Bill.\n", { callback: function() { showImage("bill.jpg", 3500, 1500) } }).delay(4000)
+		.typetype("Of was het nou G.K. Joling.\n", { callback: function() { showImage("gerardjoling.jpg", 3500, 1500) } }).delay(4000)
+		.typetype("Geintje, ik bedoel natuurlijk J.K. Rowling.", { callback: function() { showImage("cuckoo.jpg", 3500, 1500) } }).delay(4000);
+	});
+</script>
+
+</body>
+</html>
