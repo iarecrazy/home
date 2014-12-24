@@ -1,0 +1,88 @@
+{
+	"name": "template",
+	"width": "1",
+	"rows":
+	[
+		{ 
+			"id": "1",
+			"width": "1", 
+		  	"cells": 
+			[ 
+				{
+					"id": "1",
+					"width": "0.4",
+					"content":
+					{ 
+						"type": "label",
+						"value": "hello daddy! dit is een hele lange text!",
+						"css":
+						{
+							"font-style": "italic",
+							"font-family": "'Times New Roman', Times, serif",
+							"font-size": "140%",
+							"text-align": "right"
+						}
+					}
+				},
+				{ "id": "2", "width": "0.2" },
+				{ "id": "3", "width": "0.4" }
+			]
+		},
+		{ 
+			"id": "2",
+			"width": "1", 
+		  	"cells":
+			[ 
+				{ "id": "1", "width": "0.02" },
+				{ "id": "2", "width": "0.25" },
+				{ "id": "3", "width": "0.15" },
+				{ "id": "4", "width": "0.28" },
+				{
+					"id": "6",
+					"width": "0.3",
+					"content":
+					{ 
+						"type": "label",
+						"value": "dit is niet zo'n lange text malle",
+						"css":
+						{
+							"font-style": "normal",
+							"font-family": "'Times New Roman', Times, serif",
+							"font-size": "70%",
+							"text-align": "center",
+							"padding": "10px 10px 10px 10px"
+						}
+					}
+				}
+			]
+		},
+		{ 
+			"id": "3",
+			"width": "1", 
+		  	"cells": [ { "id": "1", "width": "0.42" }, { "id": "2", "width": "0.58" }]
+		},
+		{ 
+			"id": "4",
+			"width": "1", 
+		  	"cells": 
+			[ 
+				{
+					"id": "1",
+					"width": "1",
+ 					"content":
+ 					{ 
+ 						"type": "label",
+ 						"value": "Je moeder is crazy",
+						"css":
+						{
+							"font-style": "normal",
+							"font-family": "'Courier New', Courier, monospace",
+							"font-size": "250%",
+							"text-align": "center"
+						}
+ 					}
+				}
+			]
+		}		
+	]
+}
